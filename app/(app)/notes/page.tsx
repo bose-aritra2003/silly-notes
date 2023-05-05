@@ -2,7 +2,7 @@
 import Link from "next/link";
 import CreateNote from "@/app/components/client/createNote";
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 // --------------------Components--------------------
 const NotesPage = async () => {

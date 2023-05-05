@@ -4,7 +4,7 @@ import simpleIcon from "@/public/simple.png";
 import secureIcon from "@/public/secure.png";
 import {Hero} from "@/app/components/server/hero";
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 const HomePage = () => {
     return (

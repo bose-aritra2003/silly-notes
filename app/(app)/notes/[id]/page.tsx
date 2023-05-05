@@ -2,7 +2,7 @@
 import DeleteNote from "@/app/components/client/deleteNote";
 import {redirect} from "next/navigation";
 
-export const runtime = 'experimental-edge';
+export const runtime = 'edge';
 
 const NotePage = async ({ params }: any) => {
     const note = await getNote(params.id);
