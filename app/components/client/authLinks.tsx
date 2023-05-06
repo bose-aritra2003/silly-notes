@@ -1,32 +1,27 @@
 'use client';
-
 import { signIn, signOut } from "next-auth/react";
-import {useSession} from "next-auth/react";
-import Link from "next/link";
+import { NavItem } from "@/app/components/client/navItem";
 
-export const LoginButton = ({ className }: any) => {
-    const { status } = useSession();
-    if(status !== 'authenticated') {
-        return <button className={ className } onClick={() => signIn()}>Login</button>
-    } else {
-        return null;
-    }
+export const SignInButton = () => {
+    return (
+        <NavItem type={'button'} method={signIn}>
+            Login
+        </NavItem>
+    );
 }
 
-export const RegisterButton = ({ className }: any) => {
-    const { status } = useSession();
-    if(status !== 'authenticated') {
-        return <Link className={ className } href={"/register"}>Register</Link>
-    } else {
-        return null;
-    }
+export const SignOutButton = () => {
+    return (
+        <NavItem type={'button'} method={signOut}>
+            Logout
+        </NavItem>
+    );
 }
 
-export const LogoutButton = ({ className }: any) => {
-    const { status } = useSession();
-    if(status === 'authenticated') {
-        return <button className={ className } onClick={() => signOut()}>Logout</button>
-    } else {
-        return null;
-    }
+export const RegisterButton = () => {
+    return (
+        <NavItem type={'link'} href={'/register'}>
+            Register
+        </NavItem>
+    );
 }

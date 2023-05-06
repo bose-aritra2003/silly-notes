@@ -3,7 +3,7 @@ import '@/app/globals.css'
 import React from "react";
 import Navbar from "@/app/components/server/navbar";
 import Footer from "@/app/components/server/footer";
-import { Providers } from "@/app/components/client/providers";
+import { AuthProvider } from "@/app/components/client/authProvider";
 
 /* Fonts */
 const inter = Inter({
@@ -26,20 +26,19 @@ export const metadata = {
 }
 
 /* Main */
-const RootLayout = ({children}: { children: React.ReactNode }) => {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <html lang="en" className={`${inter.variable} ${gloria.variable}`}>
-            <body>
-                <Providers>
+        <AuthProvider>
+            <html lang="en" className={`${inter.variable} ${gloria.variable}`}>
+                <body>
                     <main className={"flex flex-col min-h-screen"}>
                         <Navbar />
                         {children}
                         <Footer />
                     </main>
-                </Providers>
-
-            </body>
-        </html>
+                </body>
+            </html>
+        </AuthProvider>
     );
 }
 export default RootLayout;

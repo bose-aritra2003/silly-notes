@@ -2,7 +2,7 @@ import Image from "next/image";
 import fastIcon from "@/public/fast.png";
 import simpleIcon from "@/public/simple.png";
 import secureIcon from "@/public/secure.png";
-import {Hero} from "@/app/components/server/hero";
+import { Hero } from "@/app/components/server/hero";
 
 export const runtime = 'edge';
 

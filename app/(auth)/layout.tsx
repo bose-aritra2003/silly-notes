@@ -1,7 +1,7 @@
 import { Inter, Gloria_Hallelujah } from 'next/font/google'
 import '@/app/globals.css'
 import React from "react";
-import {Providers} from "@/app/components/client/providers";
+import {AuthProvider} from "@/app/components/client/authProvider";
 
 
 /* Fonts */
@@ -29,11 +29,11 @@ const AuthLayout = ({children}: { children: React.ReactNode }) => {
     return (
         <html lang="en" className={`${inter.variable} ${gloria.variable}`}>
             <body>
-                <Providers>
+                <AuthProvider>
                     <main className={"flex flex-col min-h-screen bg-gray-50"}>
                         {children}
                     </main>
-                </Providers>
+                </AuthProvider>
 
             </body>
         </html>
