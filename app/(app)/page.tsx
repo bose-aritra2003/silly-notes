@@ -2,7 +2,7 @@ import Image from "next/image";
 import fastIcon from "@/public/fast.png";
 import simpleIcon from "@/public/simple.png";
 import secureIcon from "@/public/secure.png";
-import { Hero } from "@/app/components/server/hero";
+import { Hero } from "@/components/server/hero";
 
 export const runtime = 'edge';
 
@@ -13,7 +13,7 @@ const HomePage = () => {
 
             <div className={"px-5 xl:px-20 py-5 grid grid-cols-1 md:grid-cols-3 gap-5"}>
 
-                <div className="p-7 flex flex-col items-center border border-gray-200 rounded-md shadow xl:flex-row xl:space-x-10 xl:max-w-xl bg-gray-100 md:bg-white hover:bg-gray-100">
+                <div className="p-7 flex flex-col items-center border border-gray-200 rounded-md shadow xl:flex-row xl:space-x-10 xl:max-w-xl bg-gray-100 md:bg-white transition ease-in-out hover:bg-gray-100">
                     <Image
                         className="object-cover w-28 md:rounded-none md:rounded-l-lg"
                         src={simpleIcon}
@@ -30,7 +30,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className="p-7 flex flex-col items-center border border-gray-200 rounded-md shadow xl:flex-row xl:space-x-10 xl:max-w-xl bg-gray-100 md:bg-white hover:bg-gray-100">
+                <div className="p-7 flex flex-col items-center border border-gray-200 rounded-md shadow xl:flex-row xl:space-x-10 xl:max-w-xl bg-gray-100 md:bg-white transition ease-in-out hover:bg-gray-100">
                     <Image
                         className="object-cover w-16 md:rounded-none md:rounded-l-lg"
                         src={fastIcon}
@@ -47,7 +47,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className="p-7 flex flex-col items-center border border-gray-200 rounded-md shadow xl:flex-row xl:space-x-10 xl:max-w-xl bg-gray-100 md:bg-white hover:bg-gray-100">
+                <div className="p-7 flex flex-col items-center border border-gray-200 rounded-md shadow xl:flex-row xl:space-x-10 xl:max-w-xl bg-gray-100 md:bg-white transition ease-in-out hover:bg-gray-100">
                     <Image
                         className="object-cover w-24 md:rounded-none md:rounded-l-lg"
                         src={secureIcon}

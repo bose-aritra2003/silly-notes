@@ -1,13 +1,13 @@
 'use client';
 import Link from "next/link";
-import CreateNote from "@/app/components/client/createNote";
+import CreateNote from "@/components/client/createNote";
 
 export const runtime = 'edge';
 
 // --------------------Components--------------------
 const NotesPage = async () => {
     const getNotes = async () => {
-        const res = await fetch('http://localhost:3000/api/notes', {
+        const res = await fetch('/api/notes', {
             cache: "no-store",
         });
         const data = await res.json();
@@ -37,7 +37,7 @@ const Note = ({note}: any) => {
 
     return (
         <Link id={id} href={`/notes/${id}`}>
-            <div className={"bg-yellow-300 space-y-5 shadow-xl p-5 cursor-pointer hover:shadow-2xl hover:border-black hover:border-2"}>
+            <div className={"bg-yellow-300 space-y-5 shadow-xl p-5 cursor-pointer transition ease-in-out hover:shadow-2xl hover:border-black hover:border-2"}>
                 <h2 className={"font-gloria underline underline-offset-2 text-lg"}>{title}</h2>
                 <h5 className={"font-gloria"}>{content.substring(0, 25)}...</h5>
                 <p className={"font-mono"}>{new Date(createdAt).toDateString()}</p>

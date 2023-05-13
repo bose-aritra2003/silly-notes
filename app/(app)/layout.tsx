@@ -1,9 +1,9 @@
 import { Inter, Gloria_Hallelujah } from 'next/font/google'
 import '@/app/globals.css'
 import React from "react";
-import Navbar from "@/app/components/server/navbar";
-import Footer from "@/app/components/server/footer";
-import { AuthProvider } from "@/app/components/client/authProvider";
+import Navbar from "@/components/server/navbar";
+import Footer from "@/components/server/footer";
+import { AuthProvider } from "@/components/client/authProvider";
 
 /* Fonts */
 const inter = Inter({

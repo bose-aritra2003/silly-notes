@@ -12,7 +12,7 @@ export const NavItem = ({ children, type, method, href }: NavItemProps) => {
     if(type === 'link') {
         return (
             <Link
-                className={'cursor-pointer underline underline-offset-4 hover:decoration-4'}
+                className={'cursor-pointer font-medium hover:underline hover:underline-offset-4'}
                 // @ts-ignore
                 href={ href }
             >
@@ -23,7 +23,7 @@ export const NavItem = ({ children, type, method, href }: NavItemProps) => {
     } else {
         return (
             <button
-                className={'cursor-pointer underline underline-offset-4 hover:decoration-4'}
+                className={'cursor-pointer font-medium hover:underline hover:underline-offset-4'}
                 // @ts-ignore
                 onClick={ method }
             >

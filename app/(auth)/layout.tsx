@@ -1,7 +1,7 @@
 import { Inter, Gloria_Hallelujah } from 'next/font/google'
 import '@/app/globals.css'
 import React from "react";
-import {AuthProvider} from "@/app/components/client/authProvider";
+import {AuthProvider} from "@/components/client/authProvider";
 
 
 /* Fonts */

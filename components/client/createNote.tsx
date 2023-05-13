@@ -13,7 +13,7 @@ const CreateNote = () => {
         setTitle(title.trim());
         setContent(content.trim());
         if(!title || !content) return;
-        await fetch('http://localhost:3000/api/notes', {
+        await fetch('/api/notes', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

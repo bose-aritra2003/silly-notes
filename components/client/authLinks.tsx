@@ -1,6 +1,6 @@
 'use client';
 import { signIn, signOut } from "next-auth/react";
-import { NavItem } from "@/app/components/client/navItem";
+import { NavItem } from "@/components/client/navItem";
 
 export const SignInButton = () => {
     return (
