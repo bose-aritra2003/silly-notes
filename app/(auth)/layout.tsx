@@ -1,5 +1,5 @@
 import {Gloria_Hallelujah, Inter} from 'next/font/google'
-import '@/app/globals.css'
+import '@/styles/globals.css'
 import React from "react";
 import {AuthProvider} from "@/components/client/authProvider";
 
