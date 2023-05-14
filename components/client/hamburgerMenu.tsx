@@ -11,7 +11,7 @@ export const HamburgerMenu = () => {
     return (
         <div className="flex flex-col space-y-5 xl:hidden items-end">
             <div
-                className="cursor-pointer w-fit transition ease-in-out hover:scale-125"
+                className="cursor-pointer w-fit transition ease-in-out hover:scale-110 p-2 border border-gray-300 rounded-md"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {
