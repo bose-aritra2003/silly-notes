@@ -22,6 +22,19 @@ const gloria = Gloria_Hallelujah({
 export const metadata = {
     title: "Silly Notes - Auth",
     description: "Authentication page for Silly Notes",
+    openGraph: {
+        type: 'website',
+        locale: 'en_IN',
+        url: 'https://sillynotes.vercel.app/',
+        title: "Silly Notes - Auth",
+        siteName: 'Silly Notes',
+        description: "Authentication page for Silly Notes",
+        images: [
+            {
+                url: 'logo.png',
+            }
+        ],
+    }
 }
 
 /* Main */

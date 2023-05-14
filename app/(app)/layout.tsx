@@ -23,6 +23,19 @@ const gloria = Gloria_Hallelujah({
 export const metadata = {
     title: "Silly Notes",
     description: "The world's most unnecessarily over-engineered notes keeper",
+    openGraph: {
+        type: 'website',
+        locale: 'en_IN',
+        url: 'https://sillynotes.vercel.app/',
+        title: 'Silly Notes',
+        siteName: 'Silly Notes',
+        description: "The world's most unnecessarily over-engineered notes keeper",
+        images: [
+            {
+                url: 'logo.png',
+            }
+        ],
+    }
 }
 
 /* Main */
