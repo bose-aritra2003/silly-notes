@@ -40,7 +40,7 @@ export const LoginForm = () => {
 
         }
 
-        console.log('LoginForm submitted');
+        // console.log('LoginForm submitted');
     }
 
     return (

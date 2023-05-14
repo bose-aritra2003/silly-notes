@@ -14,7 +14,7 @@ const main = async () => {
             password: password
         }
     })
-    console.log(seedUser);
+    // console.log(seedUser);
 }
 
 main()

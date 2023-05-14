@@ -33,7 +33,7 @@ export const RegisterForm = () => {
             setError(error?.message);
         }
 
-        console.log('RegisterForm submitted');
+        // console.log('RegisterForm submitted');
     }
 
     return (
