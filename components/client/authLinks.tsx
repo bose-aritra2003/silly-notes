@@ -1,27 +1,27 @@
 'use client';
-import { signIn, signOut } from "next-auth/react";
-import { NavItem } from "@/components/client/navItem";
+import {signIn, signOut} from "next-auth/react";
+import {NavItem} from "@/components/client/navItem";
 
 export const SignInButton = () => {
-    return (
-        <NavItem type={'button'} method={signIn}>
-            Login
-        </NavItem>
-    );
+  return (
+    <NavItem type={'button'} method={signIn}>
+      Login
+    </NavItem>
+  );
 }
 
 export const SignOutButton = () => {
-    return (
-        <NavItem type={'button'} method={signOut}>
-            Logout
-        </NavItem>
-    );
+  return (
+    <NavItem type={'button'} method={signOut}>
+      Logout
+    </NavItem>
+  );
 }
 
 export const RegisterButton = () => {
-    return (
-        <NavItem type={'link'} href={'/register'}>
-            Register
-        </NavItem>
-    );
+  return (
+    <NavItem type={'link'} href={'/register'}>
+      Register
+    </NavItem>
+  );
 }

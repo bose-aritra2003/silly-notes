@@ -13,6 +13,7 @@
         "postinstall": "pnpx prisma generate"
     },
     "dependencies": {
+        "@headlessui/react": "^1.7.14",
         "@next-auth/prisma-adapter": "^1.0.6",
         "@prisma/client": "^4.14.0",
         "@types/react": "18.2.0",
