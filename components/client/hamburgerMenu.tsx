@@ -4,7 +4,8 @@ import { useState } from "react";
 import { SignInButton, SignOutButton, RegisterButton } from "@/components/client/authLinks";
 import { AuthCheck } from "@/components/client/authCheck";
 import { NavItem } from "@/components/client/navItem";
-import { AiOutlineMenu, GrClose } from "react-icons/all";
+import { AiOutlineMenu } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
 
 export const HamburgerMenu = () => {
     let [isOpen, setIsOpen] = useState(false);

@@ -26,7 +26,7 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_IN',
-        url: 'https://sillynotes.vercel.app/',
+        url: 'https://silly-notes.vercel.app',
         title: 'Silly Notes',
         siteName: 'Silly Notes',
         description: "The world's most unnecessarily over-engineered notes keeper",

@@ -25,7 +25,7 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_IN',
-        url: 'https://sillynotes.vercel.app/',
+        url: 'https://silly-notes.vercel.app',
         title: "Silly Notes - Auth",
         siteName: 'Silly Notes',
         description: "Authentication page for Silly Notes",
