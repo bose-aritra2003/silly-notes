@@ -14,16 +14,13 @@ const Footer = () => {
                 </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
                     <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6 ">Share</a>
+                        <a href="https://github.com/bose-aritra2003/silly-notes" className="mr-4 hover:underline md:mr-6">GitHub</a>
                     </li>
                     <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6">GitHub</a>
+                        <a href="https://github.com/bose-aritra2003/silly-notes/blob/master/LICENSE" className="mr-4 hover:underline md:mr-6">Licensing</a>
                     </li>
                     <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6">Licensing</a>
-                    </li>
-                    <li>
-                        <a href="#" className="hover:underline">Contact</a>
+                        <a href="mailto:dev.bose.aritra@gmail.com" className="hover:underline">Contact</a>
                     </li>
                 </ul>
             </div>
