@@ -13,7 +13,11 @@ export const LoginForm = () => {
     const router = useRouter();
 
     const searchParams = useSearchParams();
-    const callbackUrl = searchParams.get('callbackUrl') || '/notes';
+    let callbackUrl = searchParams.get('callbackUrl') || '/notes';
+
+    if(callbackUrl.split('/').includes('register')) {
+        callbackUrl = '/notes';
+    }
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
