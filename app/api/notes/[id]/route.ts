@@ -18,7 +18,7 @@ export const GET = async (req: NextRequest, context: { params: any }) => {
         id: context.params.id,
       },
     });
-    // console.log(noteFromDB);
+
     if (noteFromDB?.userId !== userId) {
       return new NextResponse(JSON.stringify({error: 'unauthorized'}), {
         status: 401
@@ -33,7 +33,6 @@ export const GET = async (req: NextRequest, context: { params: any }) => {
 export const DELETE = async (req: NextRequest, context: { params: any }) => {
   try {
     const session: any = await getServerSession(authOptions);
-    // console.log(session);
     if (!session) {
       return new NextResponse(JSON.stringify({error: 'unauthorized'}), {
         status: 401
@@ -44,7 +43,6 @@ export const DELETE = async (req: NextRequest, context: { params: any }) => {
         id: context.params.id,
       }
     });
-    // console.log(noteFromDB);
     return new NextResponse(JSON.stringify({note: noteFromDB}));
   } catch (error) {
     return new NextResponse(JSON.stringify({error}));

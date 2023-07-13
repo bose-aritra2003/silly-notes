@@ -11,7 +11,6 @@ const NotesPage = async () => {
       cache: "no-store",
     });
     const data = await res.json();
-    // console.log(data);
     return data.notes;
   }
 
